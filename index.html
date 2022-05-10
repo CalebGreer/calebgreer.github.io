@@ -9,16 +9,6 @@
     <canvas id="unity-canvas" width=640 height=1280 style="width: auto; height: 90%; background: #231F20"></canvas>
     <script src="Build/WebGL Build.loader.js"></script>
     <script>
-
-      var canvas = document.getElementById('canvas');
-      var ratio = canvas.width / canvas.height;
-
-      canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-      canvas.width = canvas.height * ratio;
-
-      canvas.style.position = "absolute";
-      canvas.style.left = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) / 2 - canvas.width / 2) + "px";
-
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
         var meta = document.createElement('meta');
